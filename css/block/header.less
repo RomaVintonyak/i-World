@@ -1,3 +1,80 @@
 //main: ../style.less
-
-
+#header {
+  width: 100%;
+  height: 60px;
+  background-color: @gray;
+  display: flex;
+  align-items: center;
+}
+.header__row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__row {
+}
+.header__menu {
+}
+.nav__link {
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Myriad Pro", sans-serif;
+  color: @white;
+  line-height: 1.2;
+  margin-right: 40px;
+  transition: color 0.3s linear;
+  position: relative;
+  z-index: 1;
+  &:last-child {
+    margin-right: 0;
+  }
+  &::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: @green;
+    position: absolute;
+    z-index: 1;
+    bottom: -0.5rem;
+    left: 0;
+    transition: width 0.3s linear;
+  }
+  &:hover {
+    color: @green;
+    &::after {
+      width: 100%;
+    }
+  }
+}
+.header__phone {
+  p{
+    font-size: 0.7rem;
+    font-family: "Tahoma", sans-serif;
+    color: @white;
+    line-height: 1.2; 
+  }
+}
+.phone__row{
+  display: flex;
+  align-items: center;
+}
+.phone__logo {
+  margin-right: 0.3rem;
+}
+.phone__content {
+  display: flex;
+  flex-direction: column;
+  a {
+    font-size: 0.9rem;
+    font-family: "Tahoma", sans-serif;
+    color: @white;
+    line-height: 1.286;
+    text-decoration: none;
+    transition: color 0.3s linear;
+    &:hover{
+      color: @green;
+    }
+  }
+}
