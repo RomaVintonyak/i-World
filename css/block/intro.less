@@ -1,0 +1,129 @@
+//main: ../style.less
+#intro {
+  width: 100%;
+}
+.intro__row {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding-top: 2.5rem;
+}
+.intro__fedback {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  text-decoration: none;
+  border-bottom: 1px dotted @green;
+  span {
+    font-size: 0.8rem;
+    font-family: "Tahoma", sans-serif;
+    color: @green;
+    line-height: 0.333;
+  }
+}
+.intro__title{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    font-family: "Myriad Pro", sans-serif;
+    color: @black;
+    line-height: 1.25;
+}
+.intro__suptitle{
+  font-size: 1.87rem;
+  font-family: "Myriad Pro",sans-serif;
+  color: #595959;
+  line-height: 1.2;
+  width: 58%;
+  margin: 2.5rem auto 0;   
+}
+.intro__arrow{
+  margin-top: 1.5rem;
+  position: relative;
+  z-index: 1;
+  span{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-right: 3px solid @orange;
+    border-bottom: 3px solid @orange;
+    position: absolute;
+    z-index: 1;
+    transform: rotate(45deg);
+    &:nth-child(2){
+      top: 8px;
+    }
+    &:nth-child(3){
+      top: 16px;
+    }
+  }
+}
+.intro__content{
+  position: relative;
+  z-index: 1;
+  height: 495px;
+  width: 100%;
+}
+.content__left{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.content__center{
+  width: 420px;
+  position: absolute;
+  z-index: 1;
+  left: calc(50% - 210px);
+  bottom: 190px;
+  border: 1px solid #e8e8e8;
+}
+.content__block{
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  width: 100%;
+  height: 3rem;
+  position: relative;
+  z-index: 1;
+  &::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(#a7a7a7,1) 50%, rgba(255,255,255,1) 90%);
+  }
+  &:last-child{
+    &::after{
+      display: none;
+    }
+  }
+  div{
+    width: 5rem;
+    height: 100%;
+    text-align: center;
+  }
+  p{
+  font-size: 1.2rem;
+  font-family: "Tahoma", sans-serif;
+  color: #7a7a7a;
+  line-height: 7.5;
+  }
+  span{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-right: 2px solid #8b8b8b;
+    border-bottom: 2px solid #8b8b8b;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: 2.5rem;
+  }
+}
+.content__rigth{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
