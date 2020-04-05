@@ -8,6 +8,9 @@
   position: relative;
   z-index: 1;
   padding-top: 2.5rem;
+  @media @tablet {
+    padding-top: 1.5rem;
+  }
 }
 .intro__fedback {
   position: absolute;
@@ -29,6 +32,16 @@
   font-family: "Myriad Pro", sans-serif;
   color: @black;
   line-height: 1.25;
+  @media @tablet {
+    font-size: 2rem;
+  }
+  @media @mobile {
+    font-size: 1.8rem;
+  }
+  @media @mobile-sm {
+    font-size: 1.3rem;
+    width: 100%;
+  }
 }
 .intro__suptitle {
   font-size: 1.87rem;
@@ -37,6 +50,21 @@
   line-height: 1.2;
   width: 58%;
   margin: 2.5rem auto 0;
+  @media @tablet {
+    margin: 1.5rem auto 0;
+    font-size: 1.7rem;
+    width: 65%;
+  }
+  @media @mobile {
+    margin: 1rem auto 0;
+    font-size: 1.4rem;
+    width: 80%;
+  }
+  @media @mobile-sm {
+    margin: 0.5rem auto 0;
+    font-size: 1.1rem;
+    width: 100%;
+  }
 }
 .intro__arrow {
   margin-top: 1.5rem;
@@ -57,6 +85,12 @@
     &:nth-child(3) {
       top: 16px;
     }
+  }
+  @media @mobile {
+    margin-top: 1rem;
+  }
+  @media @mobile-sm {
+    margin-top: 0.5rem;
   }
 }
 .intro__content {
@@ -88,12 +122,19 @@
       rgba(255, 255, 255, 1) 95%
     );
   }
+  @media @tablet {
+    height: 800px;
+  }
 }
 .content__left {
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 1;
+  @media @tablet {
+    transform: rotate(90deg);
+    bottom: 55%;
+  }
 }
 .content__center {
   width: 420px;
@@ -102,6 +143,15 @@
   left: calc(50% - 210px);
   bottom: 190px;
   border: 1px solid #e8e8e8;
+  @media @tablet {
+    z-index: 2;
+    background-color: rgba(@white, 0.8);
+    bottom: 250px;
+  }
+  @media @mobile-sm {
+    width: 300px;
+    left: calc(50% - 150px);
+  }
 }
 .content__block {
   display: -webkit-box;
@@ -160,6 +210,9 @@
     transform: rotate(-45deg);
     position: absolute;
     right: 2.5rem;
+    @media @tablet {
+      transform: rotate(45deg);
+    }
   }
 }
 .content__rigth {
@@ -167,6 +220,11 @@
   bottom: 0;
   right: 0;
   z-index: 1;
+  @media @tablet {
+    transform: rotate(-90deg);
+    right: 8%;
+    bottom: -10%;
+  }
 }
 .content__arrow {
   font-size: 1.1rem;
@@ -182,6 +240,9 @@
     z-index: 1;
     bottom: 5px;
     left: 28%;
+    @media @tablet {
+      display: none;
+    }
   }
   &::after {
     content: url(../img/intro/arrow_r.png);
@@ -189,5 +250,11 @@
     z-index: 1;
     bottom: 5px;
     right: 28%;
+    @media @tablet {
+      display: none;
+    }
+  }
+  @media @tablet{
+    margin-top: 1rem;
   }
 }

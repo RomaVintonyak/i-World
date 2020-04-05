@@ -15,7 +15,7 @@
     <!--custom styles-->
     <link rel="stylesheet" href="css/style.css" />
     <meta name="description" content="i-world" />
-    <meta name="keywords" content="iphone, ipad/>
+    <meta name="keywords" content="iphone, ipad"/>
     <meta name="google" content="notranslate" />
     <meta name="author" content="@DreamTeam" />
     <meta name="robots" content="index, follow" />
@@ -27,7 +27,7 @@
       <div class="container">
         <div class="header__row">
           <div class="header__logo">
-            <a href="index.html"><img src="img/header/logo.png" alt="logo"/></a>
+            <a href="index.html"><img src="img/header/logo.png" alt="logo" class="img"/></a>
           </div>
           <nav class="header__menu">
             <a href="#" class="nav__link">Главная</a>
@@ -38,6 +38,12 @@
             <a href="#" class="nav__link">Блог</a>
             <a href="#" class="nav__link">Контакты</a>
           </nav>
+          <div class="burger__btn" id="burgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <div class="header__phone">
             <div class="phone__row">
               <div class="phone__logo">
@@ -111,5 +117,9 @@
             </div><!--/.intro__row-->  
         </div><!--/.container-->
     </section>
+    <!--use jquery-->
+    <script src="js/libs/jquery-3.4.1.min.js"></script>
+    <!--use main script-->
+    <script src="js/main.js"></script>
   </body>
 </html>

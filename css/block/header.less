@@ -18,9 +18,15 @@
   -webkit-box-pack: justify;
   justify-content: space-between;
 }
-.header__row {
+.header__logo {
+  @media @mobile-sm{
+    width: 100px;
+  }
 }
 .header__menu {
+  @media @tablet{
+    display: none;
+  }
 }
 .nav__link {
   text-decoration: none;
@@ -54,6 +60,9 @@
       width: 100%;
     }
   }
+  @media @notebook{
+    margin-right: 20px;
+  }
 }
 .header__phone {
   p {
@@ -61,6 +70,9 @@
     font-family: "Tahoma", sans-serif;
     color: @white;
     line-height: 1.2;
+    @media @mobile-sm{
+      font-size: 0.5rem;
+    }
   }
 }
 .phone__row {
@@ -88,6 +100,9 @@
     transition: color 0.3s linear;
     &:hover {
       color: @green;
+    }
+    @media @mobile-sm{
+      font-size: 0.6rem;
     }
   }
 }
