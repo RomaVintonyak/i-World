@@ -5,11 +5,13 @@
   visibility: hidden;
   opacity: 0;
   background-color: @gray;
-  transition: height 0.5s linear, opacity 0.3s linear, visibility 0.5s linear;
+  transition: height 0.8s linear, opacity 0.8s linear, visibility 0.8s linear;
   &--open{
-    height: 90vh;
+    height: 95vh;
     opacity: 1;
     visibility: visible;
+    position: relative;
+    z-index: 2;
   }
 }
 .mobile__menu{
@@ -27,9 +29,10 @@
   color: @white;
   line-height: 1.2;
   display: block;
-  width: 10rem;
-  height: 3rem;
+  width: 8rem;
+  height: 2rem;
   background-color: rgba(@green, 0.8);
   text-align: center;
-  line-height: 48px;
+  line-height: 32px;
+  margin-bottom: 0.5rem;
 }
