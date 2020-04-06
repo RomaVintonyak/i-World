@@ -132,6 +132,7 @@
   left: 0;
   z-index: 1;
   @media @tablet {
+    -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     bottom: 55%;
   }
@@ -211,6 +212,7 @@
     position: absolute;
     right: 2.5rem;
     @media @tablet {
+      -webkit-transform: rotate(45deg);
       transform: rotate(45deg);
     }
   }
@@ -221,6 +223,7 @@
   right: 0;
   z-index: 1;
   @media @tablet {
+    -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
     right: 8%;
     bottom: -10%;
@@ -254,7 +257,7 @@
       display: none;
     }
   }
-  @media @tablet{
+  @media @tablet {
     margin-top: 1rem;
   }
 }
